@@ -16,8 +16,6 @@ return new class extends Migration
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('descreption')->nullable();
-            $table->boolean('confirmed')->nullable()->default(0);
             $table->timestamps();
         });
     }
