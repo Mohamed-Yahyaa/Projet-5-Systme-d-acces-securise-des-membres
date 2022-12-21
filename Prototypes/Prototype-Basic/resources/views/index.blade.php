@@ -18,10 +18,10 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($task as $item)
+        @foreach ($todo as $item)
         <tr>
             <td>{{$item->id}} </td>
-            <td>{{$item->Todo}} </td>
+            <td>{{$item->title}} </td>
         </tr>
         @endforeach
     </tbody>

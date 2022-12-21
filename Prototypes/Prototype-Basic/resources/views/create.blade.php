@@ -15,7 +15,7 @@
 
     <form action={{route('todo.store')}} method="POST">
         @csrf
-        Task<input type="text" name="Todo">
+        Task<input type="text" name="title">
         <button class="btn btn-primary">add</button>
     </form>
 </body>

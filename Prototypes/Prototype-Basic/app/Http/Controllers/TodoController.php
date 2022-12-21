@@ -26,9 +26,9 @@ class TodoController extends Controller
 
     public function store(Request $request){
         $todo = new Todo();
-        $todo->Todo = $request->Todo;
+        $todo->title = $request->title;
         $todo->save();
-        if( $task->save()){
+        if( $todo->save()){
             return redirect('todo');
             }
 
