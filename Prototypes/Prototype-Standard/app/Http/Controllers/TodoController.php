@@ -26,4 +26,9 @@ class TodoController extends Controller
             }
 
     }
+
+    public function delete($id){
+        Todo::find($id)->delete();
+        return back() ;
+    }
 }

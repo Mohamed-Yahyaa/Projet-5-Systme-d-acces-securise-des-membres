@@ -25,6 +25,7 @@ Route::get('/', function () {
  Route::get('dashboard',[TodoController::class,'index'])->name('dashboard');
  Route::get('create',[TodoController::class,'create'])->name('todo.create');
  Route::post('store',[TodoController::class,'store'])->name('todo.store');
+ Route::delete('delete/{id}',[TodoController::class,'delete'])->name('todo.delete');
 
 
 Route::middleware('auth')->group(function () {

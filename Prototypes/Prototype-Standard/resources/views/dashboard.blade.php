@@ -33,11 +33,11 @@
                                 @if (Auth::user())
                                 <td>
 
-                                    {{-- <form action="{{route('tache.delete',$item->id)}}" method="POST">
+                                    <form action="{{route('todo.delete',$item->id)}}" method="POST">
                                         @csrf
                                         @method("DELETE")
                                     <button  class="btn btn-danger">Suprimer</button>
-                                </form> --}}
+                                </form>
                                 </td>
                                 @endif
                             </tr>
